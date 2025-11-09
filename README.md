@@ -314,7 +314,7 @@ codebase-analyzer/
 ### Components
 
 #### Core
-- **`main.py`** (116 lines) - Thin CLI entry point, argument parsing
+- **`main.py`** - Thin CLI entry point, argument parsing
 - **`config.py`** - Environment-based configuration management
 - **`models.py`** - Pydantic models for type-safe structured output
 
@@ -459,21 +459,6 @@ NEW_MODEL: str = os.getenv("NEW_MODEL", "default-model")
 ```
 
 For detailed technical documentation, see [ARCHITECTURE.md](ARCHITECTURE.md).
-
----
-
-## 📝 License
-
-This project is provided as-is for educational and commercial use.
-
----
-
-## 🆘 Support
-
-- **Issues:** Open an issue on GitHub
-- **Questions:** Check [ARCHITECTURE.md](ARCHITECTURE.md) for technical details
-- **API Keys:** See configuration section above
-
 ---
 
 **Built with ❤️ for developers who want AI-powered codebase insights without the complexity**
