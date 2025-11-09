@@ -1,0 +1,33 @@
+# LLM Configuration
+# Choose one: openai, anthropic, or ollama (local)
+LLM_PROVIDER=openai
+
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4o-mini
+
+# Ollama Configuration (for local models)
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=codellama
+
+# Analysis Configuration
+MAX_TOKENS_PER_CHUNK=8000
+
+# Path to the codebase to analyze (can be any project)
+# Examples:
+#   CODEBASE_PATH=../SakilaProject           # Java Spring Boot project
+#   CODEBASE_PATH=../my-react-app            # JavaScript React project
+#   CODEBASE_PATH=../flask-api              # Python Flask project
+#   CODEBASE_PATH=.                          # Current directory
+CODEBASE_PATH=.
+
+# Language detection (auto or specify: java, python, javascript, go, ruby, etc.)
+TARGET_LANGUAGE=auto
+
+# Custom file patterns (optional, comma-separated)
+# If not set, will auto-detect based on language
+# INCLUDE_PATTERNS=**/*.py,**/*.js,**/requirements.txt
+
+OUTPUT_PATH=./output/analysis_results.json
+
+
